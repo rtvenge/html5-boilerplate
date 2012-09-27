@@ -1,78 +1,26 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*!
+ * Ryan Tvenge
+ * Dependencies:
+ *     HTML5 Boilerplate
+ *     Normalize
+ *     SCSS
+ *     Compass
+ *     Grid based on: http://css-tricks.com/dont-overthink-it-grids/
+*/
 
-@import "normalize.scss";
-@import "grid.scss";
-
-@import "helpers";
+@import "vars";
+@import "normalize";
+@import "typography";
+@import "grid";
+@import "responsive";
 
 /*
- * HTML5 Boilerplate
+ * Custom Styles Start Here
  *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+ * Have at it, buddy!
  */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
-html, button, input, select, textarea {
-	color: #222;
-}
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection { background: #b3d4fc; text-shadow: none; }
-::selection { background: #b3d4fc; text-shadow: none; }
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
+// helpers at the bottom!
+@import "helpers";

@@ -6,11 +6,8 @@
 	@include box-sizing(border-box);
 }
 
-$pad: 2%;
-
 .row {
-	background: green;
-	margin: 0 0 $pad 0;
+	margin: 0 0 $gridBottomSpace 0;
 	
 	&:after {
 		/* Or @extend clearfix */
@@ -22,7 +19,7 @@ $pad: 2%;
 
 [class*='col-'] {
 	float: left;
-	padding-right: $pad;
+	padding-right: $gridSideSpace;
 	.row &:last-of-type {
 		padding-right: 0;
 	}
@@ -42,18 +39,10 @@ $pad: 2%;
 .col-11 { width: percentage(11/12); }
 .col-12 { width: percentage(12/12); }
 
-@media (max-width: 500px) {
-	[class*='col-'] {
-		padding-right: 0;
-		width: 100%;
-		padding-bottom: 10px;
-	}
-}
-
 /* Opt-in outside padding */
 .row-pad {
-	padding: $pad 0 $pad $pad;
+	padding: $gridPaddedRowSpace 0 $gridPaddedRowSpace $gridPaddedRowSpace;
 	[class*='col-']:last-of-type {
-		padding-right: $pad;
+		padding-right: $gridPaddedRowSpace;
 	}
 }

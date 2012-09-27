@@ -113,46 +113,9 @@ a:hover {
     outline: 0;
 }
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-
-/*
  * Addresses font sizes and margins set differently in IE 6/7.
- * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-
-h1 {
-    font-size: 2em;
     margin: 0.67em 0;
-}
-
-h2 {
-    font-size: 1.5em;
     margin: 0.83em 0;
-}
-
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-}
-
-h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
-}
-
-h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
-}
-
-h6 {
-    font-size: 0.75em;
-    margin: 2.33em 0;
-}
-
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -170,25 +133,12 @@ strong {
     font-weight: bold;
 }
 
-blockquote {
-    margin: 1em 40px;
-}
-
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
 
 dfn {
     font-style: italic;
-}
-
-/*
- * Addresses styling not present in IE 6/7/8/9.
- */
-
-mark {
-    background: #ff0;
-    color: #000;
 }
 
 /*
@@ -281,11 +231,11 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+    margin: 0 0 $contentBottomSpace;
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 $contentSideSpace;
 }
 
 /*
@@ -295,7 +245,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 $contentSideSpace;
 }
 
 /*
@@ -501,4 +451,27 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
 }
