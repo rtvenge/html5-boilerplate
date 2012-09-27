@@ -17,8 +17,12 @@ $gridPaddedRowSpace: 2%;
  * Typography
  */
 
-$mainFont: 'Arial';
-$monospaceFont: 'Georgia', monospace;
+$mainFont: Tahoma, Verdana, Segoe, sans-serif;
+// If using Open Sans via Google Fonts, uncomment line below
+// $mainFont: 'Open Sans', sans-serif;
+// NOTE: Use font-weight: 700; and font-weight: 300; instead of "bold" and "normal".
+
+$monospaceFont: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 
 /*
  * dl, menu, ol, ul
