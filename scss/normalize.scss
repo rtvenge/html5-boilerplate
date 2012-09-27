@@ -113,9 +113,6 @@ a:hover {
     outline: 0;
 }
 
- * Addresses font sizes and margins set differently in IE 6/7.
-    margin: 0.67em 0;
-    margin: 0.83em 0;
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -465,10 +462,13 @@ img {
  * Remove default fieldset styles.
  */
 
+fieldset {
     border: 0;
     margin: 0;
     padding: 0;
+}
 
+/*
  * Allow only vertical resizing of textareas.
  */
 

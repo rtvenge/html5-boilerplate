@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html, button, input, select, textarea {
+    color: $primary;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection { background: $primary; text-shadow: none; }
+::selection { background: $primary; text-shadow: none; }
+
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 $contentHeaderBottomSpace;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+ 
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+blockquote {
+    margin: 0 $contentSideSpace $contentBottomSpace
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color:$primary;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $primary;
+    margin: 1em 0;
+    padding: 0;
+}
