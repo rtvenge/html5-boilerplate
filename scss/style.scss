@@ -1,9 +1,9 @@
 /*!
 Theme Name: THEME_NAME
-Theme URI: http://DOMAIN_NAME.com/
+Theme URI: http://THEME_DOMAIN.com/
 Author: YOUR_NAME
-Author URI: http://ryantvenge.com/
-Description: DESCRIPTION_OF_THEME
+Author URI: http://YOUR_DOMAIN.com/
+Description: 
 Version: 1.0
 */
 
@@ -12,18 +12,26 @@ Version: 1.0
  * Dependencies:
  *     HTML5 Boilerplate
  *     Normalize
+ *     Formee form framework
  *     SCSS
  *     Compass
  *     Grid based on: http://css-tricks.com/dont-overthink-it-grids/
 */
 
+@import "compass";
 @import "vars";
 @import "normalize";
+@import "wordpress";
 @import "formee-structure";
-@import "formee-style";
 @import "typography";
 @import "grid";
 @import "responsive";
+
+//redo links
+a:link { color: $secondary; }
+a:visited { color: darken($secondary, 10%); }
+a:hover, a:focus { color: $primary; }
+a:active { color: $secondary; text-decoration: none; }
 
 /*
  * Custom Styles Start Here

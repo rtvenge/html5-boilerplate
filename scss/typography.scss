@@ -3,12 +3,13 @@
    ========================================================================== */
 
 html, button, input, select, textarea {
-    color: $primary;
+	color: $mainColorType;
+	font-family: $mainFont;
 }
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /*
@@ -17,43 +18,62 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection { background: $primary; text-shadow: none; }
-::selection { background: $primary; text-shadow: none; }
+::-moz-selection { background: $primary; text-shadow: none; color: #fff; }
+::selection { background: $primary; text-shadow: none; color: #fff; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a:link { color: $primary; }
+a:visited { color: darken($primary, 10%); }
+a:hover, a:focus { color: $secondary; }
+a:active { color: $primary; text-decoration: none; }
+
 
 /* ==========================================================================
    Headers
    ========================================================================== */
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 $contentHeaderBottomSpace;
+	margin: 0 0 $contentHeaderBottomSpace;
 }
 
 h1 {
-    font-size: 2em;
+	font-size: 1.5em;
 }
 
 h2 {
-    font-size: 1.5em;
+	font-size: 1.17em;
 }
  
 h3 {
-    font-size: 1.17em;
+	font-size: 1em;
 }
 
 h4 {
-    font-size: 1em;
+	font-size: .83em;
 }
 
 h5 {
-    font-size: 0.83em;
+	font-size: 0.75em;
 }
 
 h6 {
-    font-size: 0.75em;
+	font-size: 0.75em;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+	margin: 0 0 $contentBottomSpace;
 }
 
 blockquote {
-    margin: 0 $contentSideSpace $contentBottomSpace
+	margin: 0 $contentSideSpace $contentBottomSpace
 }
 
 /*
@@ -61,8 +81,8 @@ blockquote {
  */
 
 mark {
-    background: #ff0;
-    color:$primary;
+	background: #ff0;
+	color:$mainColorType;
 }
 
 /*
@@ -70,10 +90,10 @@ mark {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid $primary;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $mainColorType;
+	margin: 0 0 $contentBottomSpace;
+	padding: 0;
 }

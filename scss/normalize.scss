@@ -72,19 +72,6 @@ html {
 }
 
 /*
- * Addresses `font-family` inconsistency between `textarea` and other form
- * elements.
- */
-
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
-
-/*
  * Addresses margins handled incorrectly in IE 6/7.
  */
 
@@ -136,15 +123,6 @@ strong {
 
 dfn {
     font-style: italic;
-}
-
-/*
- * Addresses margins set differently in IE 6/7.
- */
-
-p,
-pre {
-    margin: 1em 0;
 }
 
 /*
@@ -253,6 +231,7 @@ nav ul,
 nav ol {
     list-style: none;
     list-style-image: none;
+    padding: 0;
 }
 
 /* ==========================================================================

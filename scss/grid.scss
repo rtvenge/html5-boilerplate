@@ -1,13 +1,24 @@
 //width + padding = size_of_box
 //basically reverting back to quirks mode box model
 
-@import "compass/css3/box-sizing";
 * {
 	@include box-sizing(border-box);
 }
 
+.wrap {
+	@extend .clearfix;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	@extend .clearfix;
+	padding: 0 10px;
+}
+
 .row {
-	margin: 0 0 $gridBottomSpace 0;
+	margin: 0 auto $gridBottomSpace;
+	max-width: 1000px;
+	padding: 0 10px;
 	
 	&:after {
 		/* Or @extend clearfix */
@@ -45,4 +56,8 @@
 	[class*='col-']:last-of-type {
 		padding-right: $gridPaddedRowSpace;
 	}
+}
+.well {
+	border-radius: 4px;
+	border: 1px solid #666;
 }
