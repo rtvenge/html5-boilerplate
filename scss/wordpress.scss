@@ -7,7 +7,7 @@
 
 //Styling posts
 
-.post {
+/*.post {
 	clear: both;
 	border-top: 1px solid $mainColorType;
 	padding: $gridBottomSpace 0;
@@ -48,4 +48,60 @@
 		border-bottom-right-radius: 4px;
 		border-bottom-left-radius: 4px;
 	}
+}*/
+
+// PAGINATION
+// ----------
+
+ul.pagination {
+	clear: both;
+	height: $paginationBaseLineHeight * 2;
+	margin: $paginationBaseLineHeight 0;
+	display: inline-block;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 0;
+	border-radius: $wellBorderRadius;
+}
+.pagination li {
+	display: inline;
+}
+.pagination a {
+	float: left;
+	padding: 0 14px;
+	line-height: ($paginationBaseLineHeight * 2) - 2;
+	text-decoration: none;
+	border: 1px solid $wellBorderColor;
+	border-left-width: 0;
+	background: $wellBackgroundColor;
+}
+.pagination a:hover,
+.pagination .active a {
+	background-color: #f5f5f5;
+}
+.pagination .active a {
+	color: #666;
+	cursor: default;
+}
+.pagination .disabled span,
+.pagination .disabled a,
+.pagination .disabled a:hover {
+	color: #666;
+	background-color: transparent;
+	cursor: default;
+}
+.pagination li:first-child a {
+	border-left-width: 1px;
+	border-radius: $wellBorderRadius 0 0 $wellBorderRadius;
+}
+.pagination li:last-child a {
+	border-radius: 0 $wellBorderRadius $wellBorderRadius 0;
+}
+
+// Centered
+.pagination-centered {
+	text-align: center;
+}
+.pagination-right {
+	text-align: right;
 }

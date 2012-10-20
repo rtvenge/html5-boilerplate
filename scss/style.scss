@@ -4,15 +4,16 @@ Theme URI: http://THEME_DOMAIN.com/
 Author: YOUR_NAME
 Author URI: http://YOUR_DOMAIN.com/
 Description: 
-Version: 1.0
+Version: X.X
 */
 
-/*!
+/*
  * Ryan Tvenge
  * Dependencies:
  *     HTML5 Boilerplate
  *     Normalize
- *     Formee form framework
+ *     Formee form framework (highly altered to be more vague)
+ *     Ryan Tvenge Drop-Menus http://ryantvenge.com/2012/01/css3-drop-down-menus/
  *     SCSS
  *     Compass
  *     Grid based on: http://css-tricks.com/dont-overthink-it-grids/
@@ -25,13 +26,11 @@ Version: 1.0
 @import "formee-structure";
 @import "typography";
 @import "grid";
-@import "responsive";
+@import "drop-menus";
 
-//redo links
-a:link { color: $secondary; }
-a:visited { color: darken($secondary, 10%); }
-a:hover, a:focus { color: $primary; }
-a:active { color: $secondary; text-decoration: none; }
+//custom imports
+@import "content";
+@import "widgets";
 
 /*
  * Custom Styles Start Here
@@ -41,5 +40,6 @@ a:active { color: $secondary; text-decoration: none; }
 
 
 
+@import "responsive";
 // helpers at the bottom!
 @import "helpers";

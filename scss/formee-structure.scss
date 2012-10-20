@@ -53,7 +53,7 @@ form {
 		line-height: 1.3em;
 		vertical-align:middle;
 	}
-	.form-txt, input[type="text"], input[type="password"], input[type="email"], input[type="file"], textarea, select {
+	.form-txt, input[type="text"], input[type="password"], input[type="email"], input[type="file"], input[type="search"], textarea {
 		vertical-align: middle;
 		line-height: 1.1em;
 		width: 100%;
@@ -65,11 +65,8 @@ form {
 		height: 10em;
 	}
 	select {
-		padding:9px;
-		height:2.7em;
-		border-color:#c6c6c6 #dadada #eaeaea;
-		background: #fafafa;
-		color:#999;
+		//height:2.7em;
+		width: 100%;
 	}
 
 /* form elements  */
@@ -133,18 +130,18 @@ form {
 }
 
 /* form elements  */
-form .form-txt, form input[type="text"], form input[type="password"], form input[type="email"], form input[type="file"], form textarea, form select {
+form .form-txt, form input[type="text"], form input[type="password"], form input[type="email"], form input[type="file"], input[type="search"], form textarea {
 	border-color:#c6c6c6 #dadada #eaeaea;
 	background: #fafafa;
 	color:#999;
 	border-radius: 4px;
 }
-form .form-txt:hover, form input[type="text"]:hover, form input[type="password"]:hover, form input[type="file"]:hover, form textarea:hover, form select:hover {
+form .form-txt:hover, form input[type="text"]:hover, form input[type="password"]:hover, form input[type="file"]:hover, form input[type="search"]:hover, form textarea:hover {
 	color:#666;
 	background: #fff none;
 	border-color:#c6c6c6;
 }
-form .form-txt:focus, form input[type="text"]:focus, form input[type="password"]:focus, form input[type="file"]:focus, form textarea:focus, form select:focus  {
+form .form-txt:focus, form input[type="text"]:focus, form input[type="password"]:focus, form input[type="file"]:focus, form input[type="search"]:hover, form textarea:focus {
 	color:#333;
 	background: #fff none;
 	border-color:#659ec9 #70aedd #a8cfec;

@@ -1,0 +1,69 @@
+/* CSS Dropdowns */
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		display: inline-block;
+		float: left;
+		&:hover, &.hover {
+			z-index: 1;
+		}
+		li {
+			display: block;
+			float: none;
+		}
+		a {
+			display: block;
+		}
+	}
+}
+.nav.vertical {
+	height: auto;
+	li {
+		display: block;
+		float: none;
+	}
+}
+.nav ul, .nav div, .nav li:hover ul ul, .nav li.hover ul ul {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+	opacity: 0;
+}
+.nav.fade ul, .nav.fade div, .nav.fade li:hover ul ul, .nav.fade li.hover ul ul {
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	-o-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.nav div ul {
+	position: static;
+	left: 0;
+	padding: 0;
+	background: none;
+	opacity: 1;
+}
+.nav li:hover ul, .nav ul li:hover ul, .nav li:hover div,
+.nav li.hover ul, .nav ul li.hover ul, .nav li.hover div {
+	top: auto;
+	left: 0;
+	height: auto;
+	opacity: 1;
+}
+.nav li:hover.right ul, .nav li:hover.right div,
+.nav li.hover.right ul, .nav li.hover.right div {
+	right: 0;
+	left: auto;
+}
+.nav li:hover.right li:hover ul, .nav li.hover.right li.hover ul {
+	right: 250px;
+} 
+
+.nav li.hover ul li.hover ul ul, .nav li:hover ul li:hover ul ul, .nav.vertical li:hover ul ul ul, .nav.vertical li.hover ul ul ul, .nav div ul {
+	position: static;
+	left: 0;
+	/* box-shadow */ -webkit-box-shadow: none;-moz-box-shadow: none;
+	box-shadow: none;
+}

@@ -4,6 +4,7 @@
 .DS_Store
 
 *.scssc
+*.scss-cache
 
 *.sublime-project
 

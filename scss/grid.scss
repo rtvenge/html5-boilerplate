@@ -10,28 +10,30 @@
 }
 .container {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: $gridMaxPageWidth;
 	@extend .clearfix;
 	padding: 0 10px;
 }
 
 .row {
-	margin: 0 auto $gridBottomSpace;
-	max-width: 1000px;
+	//margin: 0 auto $gridBottomSpace;
+	margin: 0 auto;
+	max-width: $gridMaxPageWidth;
 	padding: 0 10px;
 	
 	&:after {
-		/* Or @extend clearfix */
-		content: "";
-		display: table;
-		clear: both;
+		@extend .clearfix;
+	}
+	.row {
+		padding: 0;
+		margin-right: -$gridSideSpace;
 	}
 }
 
 [class*='col-'] {
 	float: left;
 	padding-right: $gridSideSpace;
-	.row &:last-of-type {
+	.row &:last-of-type, &.col-last {
 		padding-right: 0;
 	}
 }
@@ -58,6 +60,9 @@
 	}
 }
 .well {
-	border-radius: 4px;
-	border: 1px solid #666;
+	border-radius: $wellBorderRadius;
+	border: 1px solid $wellBorderColor;
+	background: $wellBackgroundColor;
+	padding: $wellPadding;
+	margin-bottom: $gridBottomSpace;
 }
