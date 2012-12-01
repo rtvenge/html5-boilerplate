@@ -2,18 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "7978",
   "files" : {
-    "\/scss\/style.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/style.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -23,6 +11,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/apple-touch-icon.png",
       "initialSize" : 1144,
+      "fileType" : 8192
+    },
+    "\/img\/form-ic-error.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/form-ic-error.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/form-ic-error.png",
+      "initialSize" : 1150,
       "fileType" : 8192
     },
     "\/img\/formee-logo.png" : {
@@ -71,26 +70,15 @@
       "outputAbbreviatedPath" : "\/js\/plugins-ck.min.js",
       "fileType" : 64
     },
-    "\/apple-touch-icon-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "initialSize" : 1144,
-      "fileType" : 8192
-    },
-    "\/scss\/content.scss" : {
+    "\/scss\/wordpress.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/content.scss",
+      "inputAbbreviatedPath" : "\/scss\/wordpress.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/content.css",
+      "outputAbbreviatedPath" : "\/wordpress.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -105,15 +93,27 @@
       "outputAbbreviatedPath" : "\/js\/plugins.min.js",
       "fileType" : 64
     },
-    "\/scss\/wordpress.scss" : {
+    "\/scss\/content.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/wordpress.scss",
+      "inputAbbreviatedPath" : "\/scss\/content.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/wordpress.css",
+      "outputAbbreviatedPath" : "\/content.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/style.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/style.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -315,17 +315,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/js\/vendor\/html5.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/html5.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/html5.min.js",
-      "fileType" : 64
-    },
     "\/img\/form-ic-warning.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -336,6 +325,17 @@
       "outputAbbreviatedPath" : "\/img\/form-ic-warning.png",
       "initialSize" : 3386,
       "fileType" : 8192
+    },
+    "\/js\/vendor\/html5.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/html5.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/html5.min.js",
+      "fileType" : 64
     },
     "\/apple-touch-icon-57x57-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -371,15 +371,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/form-ic-error.png" : {
+    "\/apple-touch-icon-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/form-ic-error.png",
+      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/form-ic-error.png",
-      "initialSize" : 1150,
+      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "initialSize" : 1144,
       "fileType" : 8192
     },
     "\/404.html" : {
