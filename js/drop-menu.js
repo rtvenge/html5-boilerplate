@@ -10,13 +10,13 @@
 				$(this)
 					.parent('li')
 					.find('> a')
-						.addClass('highlight');
+						.addClass('hover');
 			},
 			function () {
 				$(this)
 					.parent('li')
 					.find('> a')
-						.removeClass('highlight');
+						.removeClass('hover');
 			}
 		);
 		// code to get tabbing to work properly
