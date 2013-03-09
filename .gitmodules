@@ -1,3 +1,6 @@
 [submodule "scss"]
 	path = scss
 	url = https://rtvenge@github.com/rtvenge/inuit.css.git
+[submodule "js/jQuery-menu-aim"]
+	path = js/jQuery-menu-aim
+	url = https://rtvenge@github.com/rtvenge/jQuery-menu-aim.git
